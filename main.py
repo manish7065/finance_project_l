@@ -5,6 +5,10 @@ from finance_complaint.pipeline import TrainingPipeline, PredictionPipeline
 from finance_complaint.logger import logger
 from finance_complaint.config.pipeline.training import FinanceConfig
 import sys
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file into the local environment
+load_dotenv()
 
 
 def start_training(start=False):
