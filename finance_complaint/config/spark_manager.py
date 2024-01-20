@@ -2,6 +2,12 @@ from finance_complaint.constant.environment.variable_key import AWS_ACCESS_KEY_I
 
 import os
 from pyspark.sql import SparkSession
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file into the local environment
+load_dotenv()
+
+
 access_key_id = os.getenv(AWS_ACCESS_KEY_ID_ENV_KEY, )
 secret_access_key = os.getenv(AWS_SECRET_ACCESS_KEY_ENV_KEY, )
 #
