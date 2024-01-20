@@ -8,6 +8,8 @@ airflow/webserver_config.py
 airlfow/airflow.cfg
 
 
+fin_env/
+
 .vscode
 # C extensions
 .terraform.lock.hcl
