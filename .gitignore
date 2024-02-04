@@ -10,7 +10,7 @@ airlfow/airflow.cfg
 
 fin_env/
 
-.vscode
+#.vscode
 # C extensions
 .terraform.lock.hcl
 .terraform

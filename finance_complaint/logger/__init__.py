@@ -2,7 +2,9 @@ import logging
 from datetime import datetime
 import os
 import pandas as pd
-from finance_complaint.constant import TIMESTAMP
+# from finance_complaint.constant import TIMESTAMP
+TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
+
 import shutil
 LOG_DIR = "logs"
 
