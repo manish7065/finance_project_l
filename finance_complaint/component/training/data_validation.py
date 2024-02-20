@@ -118,8 +118,7 @@ class DataValidation(FinanceDataSchema):
 
     def is_required_columns_exist(self, dataframe: DataFrame):
         try:
-            columns = list(filter(lambda x: x in self.schema.required_columns,
-                                  dataframe.columns))
+            columns = list(filter(lambda x: x in self.schema.required_columns,dataframe.columns))
 
             if len(columns) != len(self.schema.required_columns):
                 raise Exception(f"Required column missing\n\
